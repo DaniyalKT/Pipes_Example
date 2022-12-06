@@ -10,7 +10,7 @@ export class AppComponent {
   reciverName: string = ''
   dateInput: string = ''
   AmountInput: string = ''
-
+    MileInput:number = 0
   onChangeName(textValue: string){
     this.reciverName = textValue
   }
@@ -20,5 +20,8 @@ export class AppComponent {
   }
   onChangeAmount(value: string){
      this.AmountInput = value
+  }
+  onChangeMile(value: number){
+     this.MileInput = value
   }
 }

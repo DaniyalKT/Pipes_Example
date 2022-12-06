@@ -32,4 +32,20 @@
       {{AmountInput | currency }}
     </div>
   </div>
+
+
+  <div class="row">
+    <div class="form-group col">
+      <label>Mile</label><br>
+      <input type="text" class="form-control" (input)="onChangeMile($event.target.value)" >
+    </div>
+    <div class="col">
+      <label >KM</label>
+      {{MileInput | convert: 'km' }}
+      <label>M</label>
+      {{MileInput | convert: 'm' }}
+      <label >CM</label>
+      {{MileInput | convert: 'cm' }}
+    </div>
+  </div>
 </div>
