@@ -8,8 +8,17 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   reciverName: string = ''
+  dateInput: string = ''
+  AmountInput: string = ''
 
   onChangeName(textValue: string){
     this.reciverName = textValue
+  }
+
+  onChangeDate(value: string){
+     this.dateInput = value
+  }
+  onChangeAmount(value: string){
+     this.AmountInput = value
   }
 }
